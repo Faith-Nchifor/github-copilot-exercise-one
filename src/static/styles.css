@@ -76,13 +76,30 @@ section h3 {
 
 .participants-list {
   margin-top: 10px;
-  padding-left: 20px;
+  padding-left: 0;
+  list-style: none;
 }
 
 .participants-list li {
   color: #666;
   font-size: 0.9em;
   margin-bottom: 4px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 5px;
+}
+
+.delete-participant {
+  color: #c62828;
+  cursor: pointer;
+  padding: 2px 6px;
+  border-radius: 3px;
+  transition: background-color 0.2s;
+}
+
+.delete-participant:hover {
+  background-color: #ffebee;
 }
 
 .participants-header {
